@@ -42,8 +42,8 @@ La estructura del proyecto es la siguiente:
 src/
 │
 ├── config/
-│   ├── development.config.ts
-│   ├── production.config.ts
+│   ├── env.config.ts
+│   ├── enviroments.ts
 │   └── ...
 │
 ├── core/
@@ -91,7 +91,7 @@ yarn start:dev
 * NestJS
 
 # Notas
-Mirar Querys:
+Mirar los endpoint:
 ```
 cargar el archivo backend-waco.postman_collection.json en postman 
 ```
