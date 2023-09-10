@@ -10,7 +10,6 @@ export class PokemonService {
   private readonly pokeApiBaseUrl = process.env.POKE_API;
   private readonly pokemonCache: { [key: string]: Promise<any[]> } = {};
 
-  // obtener todos los Pokemon hasta la segundo generacion
   async getAllPokemon(): Promise<Pokemon[]> {
     try {
       if (this.pokemonCache['allPokemon']) {
@@ -38,7 +37,6 @@ export class PokemonService {
     }
   }
 
-  // buscar pokemon por numero o nombre
   async getPokemon(term: string): Promise<Pokemon | any[]> {
     if (this.pokemonCache[term]) {
       return this.pokemonCache[term];

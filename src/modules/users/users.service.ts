@@ -20,7 +20,6 @@ export class UsersService {
     @InjectModel(Favorite.name) private favoriteModel: Model<Favorite>,
   ) {}
 
-  // add pokemon favorite
   async addFavorite(addFavoriteDto: AddFavoriteDto): Promise<Favorite> {
     const { userId, pokemon } = addFavoriteDto;
 
@@ -62,11 +61,10 @@ export class UsersService {
     return newFavorite.save();
   }
 
-  // obtener todos los favoritos de todos los users SOLO : ADMIN
   async getAllFavorites(): Promise<Favorite[]> {
     return this.favoriteModel.find().exec();
   }
-  // obtener los pokemon favoritos por el usuario logueado o por el id
+
   async getFavoriteByUser(userId: string): Promise<Favorite> {
     const favorite = await this.favoriteModel.findOne({ userId }).exec();
 
@@ -75,7 +73,7 @@ export class UsersService {
     }
     return favorite;
   }
-  // remover un pokemon de favoritos
+
   async removeFavorite(userId: string, number: string): Promise<Favorite> {
     // Buscar al usuario por su ID
     const user = await this.favoriteModel.findOne({ userId }).exec();
@@ -105,11 +103,11 @@ export class UsersService {
 
     return user;
   }
-  // obtener todos los usuarios
+
   async getAllUser(): Promise<User[]> {
     return this.userModel.find().exec();
   }
-  // obtener  un usuario por id
+
   async getUserById(id: Types.ObjectId): Promise<User> {
     try {
       const user = await this.userModel.findById(id).exec();
@@ -123,7 +121,7 @@ export class UsersService {
       throw new BadRequestException('ID no válido');
     }
   }
-  // remover un usuario
+
   async removeUser(id: Types.ObjectId): Promise<string> {
     const user = await this.getUserById(id);
 

@@ -1,0 +1,391 @@
+{
+	"info": {
+		"_postman_id": "4ad8c253-eacf-49c3-b8b7-a31977788495",
+		"name": "backend-waco",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8252985"
+	},
+	"item": [
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"maic123@gmail.com\",\n    \"password\": \"12345Maic\",\n    \"fullName\": \"Maic Donado\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/v1/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"tony123@gmail.com\",\n    \"password\": \"12345Tony\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/v1/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "favorites",
+			"item": [
+				{
+					"name": "add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userId\": \"64faf0965bbb27bb1d20e252\",\n    \"pokemon\": [\n       {\n        \"name\": \"raticate\",\n        \"number\": 20,\n        \"image\": \"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/20.png\",\n        \"types\": [\n            \"normal\"\n        ]\n    }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/v1/users/favorites",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"users",
+								"favorites"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAll",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NGZhNzdjODYzOTBmOGI4YjBjMzQ2MTMiLCJpYXQiOjE2OTQyMDgyNjMsImV4cCI6MTY5NDIxNTQ2M30.N-DcZ1q_rizejYx99Dshbt3EMcwxTi02gM_mJgu_Xvo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/v1/users/favorites",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"users",
+								"favorites"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getLogin",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NGZhNzdjODYzOTBmOGI4YjBjMzQ2MTMiLCJpYXQiOjE2OTQyMDgyNjMsImV4cCI6MTY5NDIxNTQ2M30.N-DcZ1q_rizejYx99Dshbt3EMcwxTi02gM_mJgu_Xvo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/v1/users/favorites/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"users",
+								"favorites",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getbyUserId",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NGZhNzdjODYzOTBmOGI4YjBjMzQ2MTMiLCJpYXQiOjE2OTQyMDgyNjMsImV4cCI6MTY5NDIxNTQ2M30.N-DcZ1q_rizejYx99Dshbt3EMcwxTi02gM_mJgu_Xvo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "mutation removeProblem($id: String!) {\r\n  removeProblem(id: $id) {\r\n    message\r\n    status\r\n  }\r\n}",
+								"variables": "{\r\n  \"id\": \"64bd7b4ded02be283b3464ac\"\r\n}"
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/v1/users/favorites/64faf0965bbb27bb1d20e252",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"users",
+								"favorites",
+								"64faf0965bbb27bb1d20e252"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "removeFavorite",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "mutation removeProblem($id: String!) {\r\n  removeProblem(id: $id) {\r\n    message\r\n    status\r\n  }\r\n}",
+								"variables": "{\r\n  \"id\": \"64bd7b4ded02be283b3464ac\"\r\n}"
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/graphql",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"graphql"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "getById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/v1/users/64faf0965bbb27bb1d20e252",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"users",
+								"64faf0965bbb27bb1d20e252"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findAll",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "query GetAgents{\r\n  agents {\r\n    _id\r\n    name\r\n    assignedProblem{\r\n      _id\r\n    }\r\n  }\r\n}\r\n",
+								"variables": ""
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/v1/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "remove",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "mutation removeAgent($id: String!) {\r\n  removeAgent(id: $id) {\r\n    message\r\n    status\r\n  }\r\n}",
+								"variables": "{\r\n  \"id\": \"64bd7b4ded02be283b3464ac\"\r\n}"
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/v1/users/64fb9010c960610097118728",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"users",
+								"64fb9010c960610097118728"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "pokemon",
+			"item": [
+				{
+					"name": "getById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "query GetAgent($agentId: String!) {\r\n  agent(id: $agentId) {\r\n    _id\r\n    name\r\n  }\r\n}\r\n",
+								"variables": "{\r\n  \"agentId\":\"64bdd8978404302cb8796646\"\r\n}"
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/v1/pokemon/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"pokemon",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findAll",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "\r\n",
+								"variables": ""
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/v1/pokemon",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"pokemon"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
