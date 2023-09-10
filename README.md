@@ -86,7 +86,7 @@ yarn start:dev
 ```
 
 ## Stack usado
-* NodeJS  <img src="https://cdn.worldvectorlogo.com/logos/nodejs-1.svg" alt="Imagen" width="100" />
+* <img src="https://cdn.worldvectorlogo.com/logos/nodejs-1.svg" alt="Imagen" width="50" heigth="50" />
 * MongoDB
 * NestJS
 
