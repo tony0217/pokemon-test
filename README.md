@@ -12,18 +12,18 @@ Este es un proyecto de NestJS con una estructura modular organizada para facilit
 ```bash
 git clone https://tu-repositorio.com/tu-proyecto.git
 cd tu-proyecto
-
-Paso 2: Instala las Dependencias
+```
+## Paso 2: Instala las Dependencias
 Asegúrate de tener Node.js y npm (o yarn) instalados en tu máquina. Luego, ejecuta el siguiente comando para instalar las dependencias:
 
+```
 npm install
 # o
 yarn install
-
 ```
+
 ## Paso 3: Configuración
 ```bash
-
 Dentro de la carpeta src/config, encontrarás archivos de configuración para diferentes entornos (desarrollo, producción, etc.). Ajusta estos archivos según tus necesidades.
 
 ```
