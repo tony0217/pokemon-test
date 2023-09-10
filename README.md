@@ -29,7 +29,7 @@ npm i -g @nestjs/cli
 ## Paso 4: Configuración
 
 Dentro de la carpeta src/config, encontrarás archivos de configuración para diferentes entornos (desarrollo, producción, etc.). Ajusta estos archivos según tus necesidades.
-copia el .env.example esas son las variables de entornos a configurar , si es para desarrollo debe ser env.dev, para prod env.prod
+copia el .env.example esas son las variables de entornos a configurar , si es para desarrollo el archivo debe ser .env.dev, para prod .env
 ```
 MONGODB_HOST= 
 APP_PORT= 
