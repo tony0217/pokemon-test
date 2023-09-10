@@ -67,12 +67,14 @@ export class AuthService {
       throw new UnauthorizedException('Credenciales no válidas (email)');
     }
 
+    // encryptar la password
     if (!bcrypt.compareSync(password, user.password)) {
       throw new UnauthorizedException('Credenciales no válidas (contraseña)');
     }
 
     return {
       _id: user._id.toString(),
+      fullName: user.fullName,
       email: user.email,
       token: this.getJwtToken({ _id: user._id.toString() }),
     };
@@ -84,12 +86,13 @@ export class AuthService {
       token: this.getJwtToken({ _id: user._id.toString() }),
     };
   }
-
+  // obtener el token y firmarlo
   private getJwtToken(payload: JwtPayload) {
     const token = this.jwtService.sign(payload);
     return token;
   }
 
+  // manejo de errores
   private handleDBErrors(error: any): never {
     if (error.code === 11000) {
       throw new BadRequestException(

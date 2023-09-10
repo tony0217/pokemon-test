@@ -11,6 +11,9 @@ export class Pokemon extends Document {
 
   @Prop()
   image: string;
+
+  @Prop({ type: [String] })
+  types: string[];
 }
 
 export const PokemonSchema = SchemaFactory.createForClass(Pokemon);

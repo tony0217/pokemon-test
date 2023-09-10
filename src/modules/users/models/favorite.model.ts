@@ -15,7 +15,15 @@ export class Favorite extends Document {
 
   @Prop({
     autoCreate: false,
-    type: [{ _id: false, number: String, name: String, image: String }],
+    type: [
+      {
+        _id: false,
+        number: String,
+        name: String,
+        image: String,
+        types: [String],
+      },
+    ],
   })
   pokemon: Pokemon[];
 }

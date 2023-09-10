@@ -1,4 +1,4 @@
-import { IsString } from 'class-validator';
+import { IsString, IsArray } from 'class-validator';
 
 export class PokemonDto {
   @IsString()
@@ -9,4 +9,7 @@ export class PokemonDto {
 
   @IsString()
   image: string;
+
+  @IsArray()
+  types: string[];
 }
