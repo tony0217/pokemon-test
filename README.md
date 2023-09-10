@@ -1,7 +1,7 @@
-# Waco Test Pokemon
+# Test Pokemon Test
 
 <p align="center">
-  <img src="https://wacohub.com/wp-content/uploads/2023/08/Logo-Waco.svg" alt="Imagen" width="300" />
+  <img src="https://cdn.worldvectorlogo.com/logos/pokemon-23.svg" alt="Imagen" width="300" />
 </p>
 
 
