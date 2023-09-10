@@ -76,7 +76,6 @@ src/
 
 ```
 
-
 ## Paso 5: Inicia la Aplicación
 Para ejecutar la aplicación en modo de desarrollo, utiliza el siguiente comando:
 
@@ -86,3 +85,13 @@ npm run start:dev
 yarn start:dev
 ```
 
+## Stack usado
+* NodeJS
+* MongoDB
+* NestJS
+
+# Notas
+Mirar Querys:
+```
+cargar el archivo backend-waco.postman_collection.json en postman 
+```
