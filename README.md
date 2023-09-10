@@ -11,7 +11,6 @@ Este es un proyecto de NestJS con una estructura modular organizada para facilit
 
 ```bash
 git clone https://github.com/tony0217/pokemon-test.git
-cd waco-test
 ```
 ## Paso 2: Instala las Dependencias
 Asegúrate de tener Node.js y npm (o yarn) instalados en tu máquina. Luego, ejecuta el siguiente comando para instalar las dependencias:
