@@ -10,7 +10,7 @@ Este es un proyecto de NestJS con una estructura modular organizada para facilit
 ## Paso 1: Clona el Repositorio
 
 ```bash
-git clone https://github.com/tony0217/waco-test.git
+git clone https://github.com/tony0217/pokemon-test.git
 cd waco-test
 ```
 ## Paso 2: Instala las Dependencias
