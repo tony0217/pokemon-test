@@ -86,9 +86,9 @@ yarn start:dev
 ```
 
 ## Stack usado
-* NodeJs <img src="https://cdn.worldvectorlogo.com/logos/nodejs-1.svg" alt="Imagen" width="30" heigth="30" />
-* MongoDB
-* NestJS
+* <img src="https://cdn.worldvectorlogo.com/logos/nodejs-1.svg" alt="Imagen" width="30" heigth="30" />
+* <img src="https://cdn.worldvectorlogo.com/logos/nestjs.svg" alt="Imagen" width="30" heigth="30" />
+* <img src="https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg" alt="Imagen" width="30" heigth="30" />
 
 # Notas
 Mirar los endpoint:
