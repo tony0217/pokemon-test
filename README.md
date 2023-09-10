@@ -10,8 +10,8 @@ Este es un proyecto de NestJS con una estructura modular organizada para facilit
 ## Paso 1: Clona el Repositorio
 
 ```bash
-git clone https://tu-repositorio.com/tu-proyecto.git
-cd tu-proyecto
+git clone https://github.com/tony0217/waco-test.git
+cd waco-test
 ```
 ## Paso 2: Instala las Dependencias
 Asegúrate de tener Node.js y npm (o yarn) instalados en tu máquina. Luego, ejecuta el siguiente comando para instalar las dependencias:
@@ -22,16 +22,23 @@ npm install
 yarn install
 ```
 
-## Paso 3: Configuración
-```bash
-Dentro de la carpeta src/config, encontrarás archivos de configuración para diferentes entornos (desarrollo, producción, etc.). Ajusta estos archivos según tus necesidades.
-
+## Paso 3: Tener Nest CLI instalado
 ```
+npm i -g @nestjs/cli
+```
+
+## Paso 4: Configuración
+
+Dentro de la carpeta src/config, encontrarás archivos de configuración para diferentes entornos (desarrollo, producción, etc.). Ajusta estos archivos según tus necesidades.
+copia el .env.example esas son las variables de entornos a configurar , si es para desarrollo debe ser env.dev, para prod env.prod
+MONGODB_HOST= 
+APP_PORT= 
+POKE_API=
+JWT_SECRET=
+
 ## 🏗️ Estructura del Proyecto
 La estructura del proyecto es la siguiente:
 ```
-
-
 src/
 │
 ├── config/
@@ -68,9 +75,10 @@ src/
 
 
 ```
-## Paso 4: Inicia la Aplicación
+
+
+## Paso 5: Inicia la Aplicación
 Para ejecutar la aplicación en modo de desarrollo, utiliza el siguiente comando:
-```bash
 
 ```
 npm run start:dev
