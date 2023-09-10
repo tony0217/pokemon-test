@@ -31,7 +31,7 @@ Dentro de la carpeta src/config, encontrarás archivos de configuración para di
 La estructura del proyecto es la siguiente:
 ```
 
-```
+
 src/
 │
 ├── config/
@@ -66,7 +66,6 @@ src/
 ├── main.ts
 └── ...
 
-```
 
 ```
 ## Paso 4: Inicia la Aplicación
