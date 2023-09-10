@@ -30,11 +30,12 @@ npm i -g @nestjs/cli
 
 Dentro de la carpeta src/config, encontrarás archivos de configuración para diferentes entornos (desarrollo, producción, etc.). Ajusta estos archivos según tus necesidades.
 copia el .env.example esas son las variables de entornos a configurar , si es para desarrollo debe ser env.dev, para prod env.prod
+```
 MONGODB_HOST= 
 APP_PORT= 
 POKE_API=
 JWT_SECRET=
-
+```
 ## 🏗️ Estructura del Proyecto
 La estructura del proyecto es la siguiente:
 ```
