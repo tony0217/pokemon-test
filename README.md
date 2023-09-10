@@ -86,10 +86,11 @@ yarn start:dev
 ```
 
 ## Stack usado
-=<img src="https://cdn.worldvectorlogo.com/logos/nodejs-1.svg" alt="Imagen" width="30" heigth="30" /> NodeJs
--<img src="https://cdn.worldvectorlogo.com/logos/nestjs.svg" alt="Imagen" width="30" heigth="30" /> NestJs
--<img src="https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg" alt="Imagen" width="30" heigth="30" /> MongoDB
-
+```
+- <img src="https://cdn.worldvectorlogo.com/logos/nodejs-1.svg" alt="Imagen" width="30" heigth="30" /> NodeJs
+- <img src="https://cdn.worldvectorlogo.com/logos/nestjs.svg" alt="Imagen" width="30" heigth="30" /> NestJs
+- <img src="https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg" alt="Imagen" width="30" heigth="30" /> MongoDB
+```
 # Notas
 Mirar los endpoint:
 ```
