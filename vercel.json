@@ -2,21 +2,18 @@
   "version": 2,
   "builds": [
     {
-      "src": "nest/main.ts",
-      "use": "@vercel/node",
-      "config": {
-        "maxLambdaSize": "50mb"
-      }
+      "src": "dist/main.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "src/public/.*",
+      "use": "@vercel/static" 
     }
   ],
   "routes": [
     {
-      "src": "/public/(.*)",
-      "dest": "/dist/public/$1"
-    },
-    {
       "src": "/(.*)",
-      "dest": "/nest/main.ts"
+      "dest": "dist/main.js"
     }
   ]
 }
