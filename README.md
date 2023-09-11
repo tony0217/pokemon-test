@@ -94,5 +94,6 @@ yarn start:dev
 # Notas
 Mirar los endpoint:
 ```
+mirar documentacion: https://pokemon-test-backend-production.up.railway.app/
 cargar el archivo backend-waco.postman_collection.json en postman 
 ```
