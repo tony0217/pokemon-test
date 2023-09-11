@@ -28,8 +28,7 @@ async function Main() {
 
   const configService = app.get(ConfigService);
   const mode = process.env.NODE_ENV || 'Production';
-  const port =
-    mode == 'Production ' ? process.env.PORT : configService.get('APP_PORT');
+  const port = process.env.PORT || configService.get('APP_PORT');
 
   await app.listen(port);
 
