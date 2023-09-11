@@ -93,7 +93,7 @@ yarn start:dev
 
 # Notas
 Mirar los endpoint:
+ <a href="https://pokemon-test-backend-production.up.railway.app/">Mirar documentacion: </a> 
 ```
-mirar documentacion: https://pokemon-test-backend-production.up.railway.app/
 cargar el archivo backend-waco.postman_collection.json en postman 
 ```
