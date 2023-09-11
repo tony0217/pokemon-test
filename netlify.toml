@@ -1,0 +1,8 @@
+[build]
+  command = "npm run build"  # Comando para compilar tu aplicación NestJS
+  publish = "dist"  # Directorio donde se encuentra la aplicación compilada
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
