@@ -27,12 +27,12 @@ async function Main() {
   SwaggerModule.setup('docs', app, document);
 
   const configService = app.get(ConfigService);
-  const port = configService.get('APP_PORT') || process.env.PORT;
-  const mode = process.env.NODE_ENV;
+  const port = configService.get('APP_PORT') || 3000;
+  const mode = process.env.NODE_ENV || 'Production';
   await app.listen(port);
 
   Logger.log(
-    `⚡ RUNNING AT PORT: \x1b[31m${port} \x1b[32mIN \x1b[36m${mode.toUpperCase()} \x1b[32mmode`,
+    `⚡ RUNNING AT PORT: \x1b[31m${port} \x1b[32mIN \x1b[36m${mode} \x1b[32mmode`,
   );
 }
 Main();
