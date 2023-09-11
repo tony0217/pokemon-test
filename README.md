@@ -92,10 +92,10 @@ yarn start:dev
 - <img src="https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg" alt="Imagen" width="30" heigth="30" /> MongoDB
 
 # Notas
-sito:
+Sito:
  <a target="_blank" href="https://pokemon-test-frontend-mb5cf8bah-tony0217.vercel.app/">Mirar Sito Web </a> 
 
-endpoint:
+Endpoints:
  <a target="_blank"  href="https://pokemon-test-backend-production.up.railway.app/">Mirar  Documentacion </a> 
 ```
 cargar el archivo backend-waco.postman_collection.json en postman 
